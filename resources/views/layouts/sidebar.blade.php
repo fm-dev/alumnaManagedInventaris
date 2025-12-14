@@ -28,10 +28,10 @@
             <a href="javascript:;" class="has-arrow">
               <div class="parent-icon"><i class="material-icons-outlined">widgets</i>
               </div>
-              <div class="menu-title">Widgets</div>
+              <div class="menu-title">Master Data</div>
             </a>
             <ul>
-              <li><a href="widgets-data.html"><i class="material-icons-outlined">arrow_right</i>Data</a>
+              <li><a href="widgets-data.html"><i class="material-icons-outlined">arrow_right</i>Kategori</a>
               </li>
               <li><a href="widgets-static.html"><i class="material-icons-outlined">arrow_right</i>Static</a>
               </li>
