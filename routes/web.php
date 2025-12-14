@@ -11,5 +11,8 @@ Route::get('/registrations',[AuthController::class, 'showRegistrationForm'])->na
 Route::post('/registrations/add',[AuthController::class, 'registration'])->name('registrations');
 Route::middleware(CheckSession::class)->group(function () {
    Route::get('/dashboard',[DashboardController::class, 'showDashboard'])->name('dashboard');
+   Route::get('/kategori',[DashboardController::class, 'showKategori'])->name('dashboard.kategori');
    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+   Route::get('/kategori/add', [DashboardController::class, 'showAddKategori'])->name('dashboard.kategori.add');
+   Route::post('/kategori/add/crate', [DashboardController::class, 'addCategory'])->name('dashboard.kategori.add.create');
 });

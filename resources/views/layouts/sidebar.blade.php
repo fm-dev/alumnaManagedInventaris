@@ -31,7 +31,7 @@
               <div class="menu-title">Master Data</div>
             </a>
             <ul>
-              <li><a href="widgets-data.html"><i class="material-icons-outlined">arrow_right</i>Kategori</a>
+              <li><a href="/kategori"><i class="material-icons-outlined">arrow_right</i>Kategori</a>
               </li>
               <li><a href="widgets-static.html"><i class="material-icons-outlined">arrow_right</i>Static</a>
               </li>

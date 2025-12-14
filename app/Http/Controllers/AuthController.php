@@ -31,7 +31,7 @@ class AuthController extends Controller
                 'email' => $data['email'],
                 'password' => bcrypt($data['password']),
             ]);
-            return redirect()->route('login')->with('success', 'Registration successful. Please login.');
+            return redirect()->route('loginForm')->with('success', 'Registration successful. Please login.');
 
         }
         catch(\Exception $e){
