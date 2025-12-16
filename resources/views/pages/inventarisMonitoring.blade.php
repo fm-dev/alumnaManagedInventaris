@@ -5,46 +5,47 @@
             <div class="card w-100 overflow-hidden rounded-4">
               <div class="card-body position-relative p-4">
                 <div class="row">
-                  			<div class="page-breadcrumb  d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Master Data</div>
-					<div class="ps-3">
-						<nav aria-label="breadcrumb">
-							<ol class="breadcrumb mb-0 p-0">
-								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-								</li>
-								<li class="breadcrumb-item active" aria-current="page">Data Kategori</li>
-							</ol>
-						</nav>
+					<div>
+						<div class="breadcrumb-title pe-1 fw-bold">Inventaris Data</div>
+						<div class="ps-3">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb mb-0 p-0">
+									<li class="breadcrumb-item "><a href="javascript:;"><i class="bx bx-home-alt "></i></a>
+									</li>
+									<li class="breadcrumb-item active text-white" aria-current="page">Monitoring Inventaris</li>
+								</ol>
+							</nav>
+						</div>
 					</div>
-				</div>
-                </div><!--end row-->
-              </div>
-            </div>
-          </div>
-          <div class="col-xxl-12 d-flex align-items-stretch">
-            <div class="card w-100 overflow-hidden rounded-4">
-              <div class="card-body position-relative p-4">
-                <div class="row">
-                    <div>
-                        <a href="/kategori/add" class="btn btn-grd btn-grd-warning px-5">+ Tambah Kategori</a>
-                    </div>
+					<div>
+						
+					</div>
+					<div class= "d-flex flex-row mt-2 gap-2">
+						<a class = "btn btn-success">Download Rekap excel</a>
+					</div>
                   <div class="table-responsive mt-3">
 							<table id="example2" class="table table-striped table-bordered">
 								<thead>
 									<tr>
-										<th>Nama Kategori</th>
+										<th>Nama Inventaris</th>
+										<th>Jenis Kategori</th>
+										<th>Jumlah Inventaris</th>
 										<th>Created by</th>
 										<th>Created date</th>
 										<th>Action</th>
 									</tr>
 								</thead>
 								<tbody>
-                                   @foreach($categories as $key => $category)
+									@foreach($inventarises as $key => $inventaris)
 									<tr>
-										<td>{{ $category->name }}</td>
-										<td>{{ $category->created_by }}</td>
-										<td>{{ $category->created_at }}</td>
-										<td>61</td>
+										<td>{{ $inventaris->nama_barang }}</td>
+										<td>{{ $inventaris->category_name }}</td>
+										<td>{{ $inventaris->jumlah_barang }}</td>
+										<td>{{ $inventaris->created_by }}</td>
+										<td>{{ $inventaris->created_at }}</td>
+										<td>
+
+										</td>
 									</tr>
 									@endforeach
 								</tbody>

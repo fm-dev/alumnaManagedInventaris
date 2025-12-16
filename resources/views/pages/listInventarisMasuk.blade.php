@@ -6,13 +6,13 @@
               <div class="card-body position-relative p-4">
                 <div class="row">
                   			<div class="page-breadcrumb  d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Master Data</div>
+					<div class="breadcrumb-title pe-3">Master Inventaris Masuk</div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
 								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
 								</li>
-								<li class="breadcrumb-item active" aria-current="page">Data Kategori</li>
+								<li class="breadcrumb-item active" aria-current="page">Inventaris Masuk</li>
 							</ol>
 						</nav>
 					</div>
@@ -26,24 +26,26 @@
               <div class="card-body position-relative p-4">
                 <div class="row">
                     <div>
-                        <a href="/kategori/add" class="btn btn-grd btn-grd-warning px-5">+ Tambah Kategori</a>
+                        <a href="/Inventaris/form" class="btn btn-grd btn-grd-warning px-5">+ Tambah inventaris masuk</a>
                     </div>
                   <div class="table-responsive mt-3">
 							<table id="example2" class="table table-striped table-bordered">
 								<thead>
 									<tr>
-										<th>Nama Kategori</th>
-										<th>Created by</th>
+										<th>Nama barang</th>
+										<th>Jumlah Barang masuk</th>
 										<th>Created date</th>
+										<th>Created by</th>
 										<th>Action</th>
 									</tr>
 								</thead>
 								<tbody>
-                                   @foreach($categories as $key => $category)
+                                   @foreach($tambahInventarises as $key => $tambahInventaris)
 									<tr>
-										<td>{{ $category->name }}</td>
-										<td>{{ $category->created_by }}</td>
-										<td>{{ $category->created_at }}</td>
+										<td>{{ $tambahInventaris->nama_barang }}</td>
+										<td>{{ $tambahInventaris->jumlah_barang }}</td>
+										<td>{{ $tambahInventaris->created_at }}</td>
+										<td>{{ $tambahInventaris->created_by }}</td>
 										<td>61</td>
 									</tr>
 									@endforeach

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maxton | Bootstrap 5 Admin Dashboard Template</title>
+  <title>AyaIyan</title>
   <!--favicon-->
   <link rel="icon" href="{{ asset('assets/images/favicon-32x32.png') }}" type="image/png">
   <!-- loader-->
@@ -16,10 +16,15 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/plugins/metismenu/metisMenu.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/plugins/metismenu/mm-vertical.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/plugins/simplebar/css/simplebar.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css">
+  
   <!--bootstrap css-->
   <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  
   <!--main css-->
   <link href="{{ asset('assets/css/bootstrap-extended.css') }}" rel="stylesheet">
   <link href="{{ asset('sass/main.css') }}" rel="stylesheet">
@@ -28,7 +33,6 @@
   <link href="{{ asset('sass/semi-dark.css') }}" rel="stylesheet">
   <link href="{{ asset('sass/bordered-theme.css') }}" rel="stylesheet">
   <link href="{{ asset('sass/responsive.css') }}" rel="stylesheet">
-
 </head>
 
 <body>

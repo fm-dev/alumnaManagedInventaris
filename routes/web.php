@@ -15,4 +15,8 @@ Route::middleware(CheckSession::class)->group(function () {
    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
    Route::get('/kategori/add', [DashboardController::class, 'showAddKategori'])->name('dashboard.kategori.add');
    Route::post('/kategori/add/crate', [DashboardController::class, 'addCategory'])->name('dashboard.kategori.add.create');
+   Route::get('/Inventaris/form', [DashboardController::class, 'showInventarisMasuk'])->name('dashboard.inventaris');
+   Route::get('/Inventaris/list', [DashboardController::class, 'listInventaris'])->name('dashboard.inventaris.list');
+   Route::post('/Inventaris/add', [DashboardController::class, 'addInventaris'])->name('dashboard.inventaris.add');
+   Route::get('/Inventaris/incoming/list', [DashboardController::class, 'showListInventarisMasuk'])->name('dashboard.inventaris.incoming.list');
 });

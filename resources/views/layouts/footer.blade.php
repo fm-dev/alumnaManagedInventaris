@@ -18,6 +18,8 @@
   <script src="{{ asset('assets/plugins/peity/jquery.peity.min.js') }}"></script>
   <script src="{{ asset('assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
   <script src="{{ asset('assets/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="{{ asset('assets/plugins/select2/js/select2-custom.js') }}"></script>
   
   <!-- Main JS -->
   <script src="{{ asset('assets/js/main.js') }}"></script>
@@ -26,7 +28,8 @@
 			$('#example2').DataTable();
 		  } );
 	</script>
-    
+  
+  
 </body>
 
 </html>

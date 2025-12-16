@@ -33,32 +33,24 @@
             <ul>
               <li><a href="/kategori"><i class="material-icons-outlined">arrow_right</i>Kategori</a>
               </li>
-              <li><a href="widgets-static.html"><i class="material-icons-outlined">arrow_right</i>Static</a>
-              </li>
             </ul>
           </li>
           <li>
             <a class="has-arrow" href="javascript:;">
               <div class="parent-icon"><i class="material-icons-outlined">apps</i>
               </div>
-              <div class="menu-title">Apps</div>
+              <div class="menu-title">Inventaris</div>
             </a>
             <ul>
-              <li><a href="app-emailbox.html"><i class="material-icons-outlined">arrow_right</i>Email Box</a>
+              <li><a href="/Inventaris/list"><i class="material-icons-outlined">arrow_right</i>Inventaris</a>
               </li>
-              <li><a href="app-emailread.html"><i class="material-icons-outlined">arrow_right</i>Email Read</a>
+              <li><a href="/Inventaris/incoming/list"><i class="material-icons-outlined">arrow_right</i>Inventaris Masuk</a>
               </li>
-              <li><a href="app-chat-box.html"><i class="material-icons-outlined">arrow_right</i>Chat</a>
-              </li>
-              <li><a href="app-fullcalender.html"><i class="material-icons-outlined">arrow_right</i>Calendar</a>
-              </li>
-              <li><a href="app-to-do.html"><i class="material-icons-outlined">arrow_right</i>To do</a>
-              </li>
-              <li><a href="app-invoice.html"><i class="material-icons-outlined">arrow_right</i>Invoice</a>
+              <li><a href="app-chat-box.html"><i class="material-icons-outlined">arrow_right</i>Inventaris Keluar</a>
               </li>
             </ul>
           </li>
-          <li class="menu-label">UI Elements</li>
+          <!-- <li class="menu-label">UI Elements</li>
           <li>
             <a href="cards.html">
               <div class="parent-icon"><i class="material-icons-outlined">inventory_2</i>
@@ -341,7 +333,7 @@
               </div>
               <div class="menu-title">Support</div>
             </a>
-          </li>
+          </li> -->
          </ul>
         <!--end navigation-->
     </div>
