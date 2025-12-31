@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('tambah_inventaris', function (Blueprint $table) {
             $table->id();
+            $table->string("nomor_batch")->nullable();
             $table->integer("inverntaris_id");
             $table->string("created_by");
             $table->integer("jumlah_barang");

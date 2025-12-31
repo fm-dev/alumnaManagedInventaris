@@ -9,6 +9,7 @@ class tambahInventaris extends Model
     protected $fillable = [
         'inverntaris_id',
         'created_by',
-        'jumlah_barang'
+        'jumlah_barang',
+        'nomor_batch',
     ];
 }
